@@ -11,7 +11,7 @@ const db = require('./_helpers/db');
 
 // Environment detection
 const isProduction = process.env.NODE_ENV === 'production';
-const port = isProduction ? (process.env.PORT || 80) : 4000;
+const port = process.env.PORT  ||10000;
 const allowedOrigins = [
     'http://localhost:4200',
     'http://localhost:3000',
